@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/",
+            "baseHref": "/login",
             "outputPath": "dist/resume-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -43,7 +43,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/",
+              "baseHref": "/login",
               "outputPath": "dist/resume-app",
               "budgets": [
                 {
