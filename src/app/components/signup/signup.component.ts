@@ -60,7 +60,7 @@ export class SignupComponent {
         timer: 1000,
         showConfirmButton: false,
       }).then(() => {
-        this.router.navigate(['/login']); // Redirect to login page
+        this.router.navigate(['/']); // Redirect to login page
       });
     } else {
       Swal.fire({
