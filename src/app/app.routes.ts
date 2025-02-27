@@ -10,4 +10,5 @@ export const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'resume', component: ResumeComponent, canActivate: [authGuard] },
   { path: 'contact', component: ContactComponent, canActivate: [authGuard] },
+  { path: '**', redirectTo: '' }
 ];
