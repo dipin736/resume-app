@@ -1,0 +1,33 @@
+<mat-card class="contact-card">
+    <h2>Contact Me</h2>
+    <form (ngSubmit)="onSubmit()">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="name" name="name" required>
+      </mat-form-field>
+      @if (!name.trim()) {
+        <p class="error">Name is required</p>
+      }
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="email" name="email" required email>
+      </mat-form-field>
+      @if (!email.trim()) {
+        <p class="error">Email is required</p>
+      }
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <textarea matInput [(ngModel)]="message" name="message" required></textarea>
+      </mat-form-field>
+      @if (!message.trim()) {
+        <p class="error">Message is required</p>
+      }
+  
+      <button class="rainbow-hover" type="submit">
+        <span class="sp">Submit</span>
+      </button>
+    </form>
+  </mat-card>

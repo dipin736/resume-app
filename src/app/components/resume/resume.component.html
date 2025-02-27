@@ -1,0 +1,46 @@
+<div class="resume-container">
+    <mat-card class="resume-card" *ngFor="let section of resumeSections">
+      <h2>{{ section.title }}</h2>
+  
+      <ul *ngIf="section.content">
+        <li *ngFor="let item of section.content">{{ item }}</li>
+      </ul>
+
+      <div *ngIf="section.experience">
+        <div *ngFor="let exp of section.experience" class="experience-item">
+          <h3>{{ exp.role }} - {{ exp.company }}</h3>
+          <p>({{ exp.duration }})</p>
+          <ul>
+            <li *ngFor="let detail of exp.details">{{ detail }}</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div *ngIf="section.skills">
+        <ul class="skills-list">
+          <li *ngFor="let skill of section.skills">{{ skill }}</li>
+        </ul>
+      </div>
+      
+  
+      <div *ngIf="section.projects">
+        <div *ngFor="let project of section.projects" class="project-item">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <p><strong>Tech Used:</strong> {{ project.tech }}</p>
+          <a [href]="project.link" target="_blank">View Project</a>
+        </div>
+      </div>
+    </mat-card>
+  
+    <div class="button-container">
+        <button mat-raised-button class="btn" (click)="fetchDog()">
+          <span>Fetch My Dog Breed</span>
+        </button>
+        <button mat-raised-button class="btn" color="primary" routerLink="/contact">
+          <span>Contact Me</span>
+        </button>
+      </div>
+
+  </div>
+  

@@ -1,59 +1,48 @@
-# ResumeApp
+# Angular Resume Web App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This is a **single-page Angular web application** that serves as an interactive resume.It includes a signup & login system, a contact form, and a fun "Fetch My Dog Breed" button that displays a random dog image using the [Dog API](https://dog.ceo/dog-api/).
 
-## Development server
+## Features
+- **Signup & Login System**: Securely stores credentials in localStorage and manages sessions with sessionStorage.
+- **Resume Sections**: Displayed in cards with hover animations.
+- **Skills**: Shown as chips for a clean UI.
+- **Contact Form**: Protected by basic authentication.
+- **Fetch My Dog Breed**: Fetches and displays a random dog image in a popup.
+- **Responsive Design**: Works seamlessly on all screen sizes.
+- **Modern Angular Features**: Uses the latest Angular v17+ features.
 
-To start a local development server, run:
+## Live Demo
 
-```bash
-ng serve
-```
+Check out the live demo of the project: [Live Demo](#) 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Technologies Used
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Angular**: Frontend framework.
+- **Angular Material**: UI components for a modern look.
+- **Dog API**: Fetches random dog images.
+- **HTML/CSS**: For styling and animations.
+- **TypeScript**: For application logic.
 
-```bash
-ng generate component component-name
-```
+## Getting Started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Follow these steps to set up the project locally.
 
-```bash
-ng generate --help
-```
+### Prerequisites
 
-## Building
+- Node.js (v18 or higher)
+- Angular CLI (v17 or higher)
+- Git
 
-To build the project run:
+### Installation
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/angular-resume-app.git
+   cd angular-resume-app
+2. **Install dependencies**:
+    ```bash
+    npm install
+3. **Start the Angular development server**:
+    ```bash
+    ng serve --open
