@@ -13,7 +13,7 @@ This is a **single-page Angular web application** that serves as an interactive 
 
 ## Live Demo
 
-Check out the live demo of the project: [Live Demo](#) 
+Check out the live demo of the project: https://resume-app-rdty.onrender.com/ 
 
 
 ## Technologies Used
